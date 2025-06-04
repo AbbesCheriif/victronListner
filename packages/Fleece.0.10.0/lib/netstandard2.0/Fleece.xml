@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fleece</name></assembly>
+<members>
+<member name="M:Fleece.AdHocEncoding.toIEncodingN``5(Microsoft.FSharp.Core.FSharpFunc{``3,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Uncurry,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{``0,``1},Fleece.Codec{Fleece.IEncoding,Fleece.IEncoding,``4,``4}}}},Microsoft.FSharp.Core.FSharpFunc{Fleece.AdHocEncoding,Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{Fleece.IEncoding,``3}}},Microsoft.FSharp.Core.FSharpFunc{Fleece.IEncoding,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``2)">
+<summary>
+ Same as toIEncoding but with many parameters in tupled form.
+</summary>
+</member>
+<member name="M:Fleece.AdHocEncoding.toIEncoding1``2(Microsoft.FSharp.Core.FSharpFunc{Fleece.IEncoding,Microsoft.FSharp.Core.FSharpFunc{Fleece.Codec{Fleece.IEncoding,Fleece.IEncoding,``0,``0},Fleece.Codec{Fleece.IEncoding,Fleece.IEncoding,``1,``1}}},Fleece.Codec{Fleece.IEncoding,Fleece.IEncoding,``0,``0})">
+<summary>
+ Same as toIEncoding but with one parameter.
+</summary>
+</member>
+<member name="M:Fleece.AdHocEncoding.toIEncoding``1(Microsoft.FSharp.Core.FSharpFunc{Fleece.IEncoding,Fleece.Codec{Fleece.IEncoding,Fleece.IEncoding,``0,``0}})">
+<summary>
+ Evals the IEncoding parameter to get a concrete Codec.
+</summary>
+</member>
+<member name="P:Fleece.IEncoding.getCase">
+<summary>
+ Returns a string representing the internal &quot;case&quot; (or type) of the encoding (ie: Array, Object, ... )
+</summary>
+</member>
+<member name="T:Fleece.Decoder`2">
+<summary>
+ Decodes a value of raw type &apos;S into a value of generic type &apos;t, possibly returning an error.
+</summary>
+</member>
+<member name="T:Fleece.Codec`2">
+<summary>
+ A codec for raw type &apos;S to strong type &apos;t.
+</summary>
+</member>
+<member name="M:Fleece.Codec`4.op_MultiplyGreater``3(Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},``1,``2},Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},``2,``2})">
+<summary>
+ Apply two codecs in such a way that the field values are ignored when decoding.
+</summary>
+</member>
+<member name="M:Fleece.Codec`4.op_LessMultiply``3(Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},``1,``1},Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},``2,``1})">
+<summary>
+ Apply two codecs in such a way that the field values are ignored when decoding.
+</summary>
+</member>
+<member name="T:Fleece.Codec`4">
+<summary>
+ A decoder from raw type &apos;S1 and encoder to raw type &apos;S2 for strong types &apos;t1 and &apos;t2.
+</summary>
+</member>
+<member name="T:Fleece.Encoder`2">
+<summary>
+ Encodes a value of a generic type &apos;t into a value of raw type &apos;S.
+</summary>
+</member>
+<member name="T:Fleece.ICodecInterface`1">
+<summary>
+ Marker interface for all interfaces whose derived classes will support codecs
+</summary>
+</member>
+<member name="M:Fleece.Lens._jkey``5(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``1,Microsoft.FSharp.Core.FSharpFunc{``0,Fleece.PropertyList{``0}}},Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Map,``2}},Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{``3,``0},``4}},Microsoft.FSharp.Core.FSharpFunc{``0,``4},System.String)">
+<summary>
+ Like &apos;_jnth&apos;, but for &apos;Object&apos; with Text indices.
+</summary>
+</member>
+<member name="P:Fleece.ComputationExpressions.codec">
+<summary>
+ Codec Applicative Computation Expression.
+</summary>
+</member>
+<member name="M:Fleece.CodecInterfaceExtensions.ICodecInterface`1.RegisterCodec.Static``3(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Fleece.Codec{Fleece.PropertyList{``1},Fleece.PropertyList{``1},``2,``2}})">
+<summary>
+ This is the entry point to register codecs for interface implementations.
+</summary>
+</member>
+<member name="M:Fleece.Operators.op_DotEqualsQmark``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Creates a new Json key-value pair for a Json object if the value is present in the option
+</summary>
+</member>
+<member name="M:Fleece.Operators.op_DotEquals``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,``0)">
+<summary>
+ Creates a new Encoding key-value pair for an Encoding object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jpairOpt``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Creates a new Json key-value pair for a Json object if the value option is present
+</summary>
+</member>
+<member name="M:Fleece.Operators.jpair``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,``0)">
+<summary>
+ Creates a new Encoding key-value pair for an Encoding object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.op_DotAtQmark``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{``0,``0,``1,``1}}}}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Tries to get a value from an Encoding object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.op_DotAt``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{``0,``0,``1,``1}}}}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Gets a value from an Encoding object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jgetOpt``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{``0,``0,``1,``1}}}}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Tries to get a value from an Encoding object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jget``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{``0,``0,``1,``1}}}}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Gets a value from an Encoding object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jgetOptWith``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpResult{``1,``2}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Tries to get a value from an Encoding object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jgetWith``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpResult{``1,Fleece.DecodeError}},Fleece.PropertyList{``0},System.String)">
+<summary>
+ Gets a value from an Encoding object.
+</summary>
+</member>
+<member name="M:Fleece.Operators.jopt``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpCodec,Fleece.Codec{``2,``2,``1,``1}}}}},Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``1}},System.String,Microsoft.FSharp.Core.FSharpFunc{``0,``1})">
+<summary>
+ Derives a concrete field codec for an optional field.
+</summary>
+</member>
+<member name="M:Fleece.Operators.joptWithLazy``4(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``2}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Fleece.Codec{``0,``1,``2,``2}},System.String,Microsoft.FSharp.Core.FSharpFunc{``3,``2})">
+ <summary>Same as joptWith but using a thunk for the explicit codec. Useful for recursive types.</summary>
+</member>
+<member name="M:Fleece.Operators.joptWith``4(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``2}},Fleece.Codec{``0,``1,``2,``2},System.String,Microsoft.FSharp.Core.FSharpFunc{``3,``2})">
+ <summary>Same as jopt but using an explicit codec.</summary>
+</member>
+<member name="M:Fleece.Operators.jreq``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpCodec,Fleece.Codec{``2,``2,``1,``1}}}}},System.String,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}})">
+ <summary>Derives a concrete field object codec for a required field.</summary>
+ <param name="name">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Operators.defaultCodec``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpCodec,Fleece.Codec{``0,``0,``1,``1}}}}})">
+<summary>
+ Derive automatically a Codec from the type, based on GetCodec / Codec static members.
+</summary>
+</member>
+<member name="M:Fleece.Operators.ofObjCodec``2(Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},``1,``1})">
+<summary>
+ Creates a codec to (from) &apos;Encoding from (to) an Object-Codec.
+ &lt;param name=&quot;objCodec&quot;&gt;A codec of MultiMap from/to a strong type.&lt;/param&gt;
+ &lt;returns&gt;A codec of a strong type to (from) Encoding.&lt;/returns&gt;
+</summary>
+</member>
+<member name="M:Fleece.Operators.op_LessMinusGreater``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpResult{``1,Fleece.DecodeError}},Microsoft.FSharp.Core.FSharpFunc{``2,``3})">
+<summary>
+ Creates a Codec from a pair of decoder and encoder functions, same as Codec.create
+</summary>
+</member>
+<member name="M:Fleece.Internals.GetEnc.Invoke``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{``1,Fleece.Codec{``0,``0,``2,``2}}}}},``2)">
+<summary>
+ Invoker for Codec, originated from an Encoder Invoker.
+</summary>
+</member>
+<member name="M:Fleece.Internals.GetDec.Invoke``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{``1,Fleece.Codec{``0,``0,``2,``2}}}}},``2)">
+<summary>
+ Invoker for Codec, originated from a Decoder Invoker.
+</summary>
+</member>
+<member name="M:Fleece.Internals.GetCodec.Invoke``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{``1,Fleece.Codec{``0,``0,``2,``2}}}}},``2)">
+<summary>
+ Invoker for Codec
+</summary>
+</member>
+<member name="M:Fleece.Codec.map``4(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Fleece.Codec{Fleece.PropertyList{``2},Fleece.PropertyList{``2},``0,``3})">
+<summary>
+ Maps a function over the decoder.
+</summary>
+</member>
+<member name="M:Fleece.Codec.compose``6(Fleece.Codec{``0,``1,``2,``3},Fleece.Codec{``2,``3,``4,``5})">
+<summary>
+ Creates a new codec which is the result of applying codec2 then codec1 for encoding
+ and codec1 then codec2 for decoding
+</summary>
+</member>
+<member name="M:Fleece.Codec.invmap``4(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``0},Fleece.Codec{``1,``1,``2,``3})">
+<summary>
+ Turns a Codec into another Codec, by mapping it over an isomorphism.
+</summary>
+</member>
+<member name="T:Fleece.Codec">
+<summary>
+ Functions operating on Codecs
+</summary>
+</member>
+<member name="M:Fleece.Decode.Fail.parseError``1(System.Exception,System.String)">
+ <summary>Creates a parsing error.</summary>
+ <param name="exn">The source parsing exception.</param>
+ <param name="value">The portion of the source string, representing the value that caused the parsing error.</param>
+ <returns>The resulting DecodeError.</returns>
+</member>
+<member name="T:Fleece.Decode">
+<summary>
+ Helpers to deal with Decode errors.
+</summary>
+</member>
+</members>
+</doc>

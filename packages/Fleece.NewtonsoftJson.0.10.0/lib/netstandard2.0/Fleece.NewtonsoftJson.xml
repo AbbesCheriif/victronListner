@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fleece.NewtonsoftJson</name></assembly>
+<members>
+<member name="M:Fleece.Newtonsoft.Encoding.Wrap(Newtonsoft.Json.Linq.JToken)">
+<summary>
+ Wraps a JsonValue inside an IEncoding
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Encoding.Unwrap(Fleece.IEncoding)">
+<summary>
+ Unwraps the JsonValue inside an IEncoding
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.toJsonValue``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},``0)">
+<summary>
+ Gets the native json type representation of the value, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.toJsonText``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},``0)">
+<summary>
+ Gets the json text representation of the value, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.toJson``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},``0)">
+<summary>
+ Gets the json encoding representation of the value, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.ofJsonValue``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Newtonsoft.Json.Linq.JToken)">
+<summary>
+ Attempts to decode the value from its native json type representation, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.ofJsonText``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},System.String)">
+<summary>
+ Attempts to decode the value from its json text representation, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Operators.ofJson``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Fleece.Newtonsoft.Encoding)">
+<summary>
+ Attempts to decode the value from its json encoding representation, using its default codec.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Internals.jobj(System.Collections.Generic.IEnumerable{System.Tuple{System.String,Newtonsoft.Json.Linq.JToken}})">
+<summary>
+ Creates a new Json object for serialization
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.Lens._jkey``4(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Newtonsoft.Json.Linq.JToken,System.Collections.Generic.IReadOnlyDictionary{System.String,Newtonsoft.Json.Linq.JToken}}},Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Map,``1}},Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{``2,Newtonsoft.Json.Linq.JToken},``3}},Microsoft.FSharp.Core.FSharpFunc{Newtonsoft.Json.Linq.JToken,``3},System.String)">
+<summary>
+ Like &apos;_jnth&apos;, but for &apos;Object&apos; with Text indices.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jfieldOptWith``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``0}},Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0},System.String,Microsoft.FSharp.Core.FSharpFunc{``1,``0},Fleece.Codec{Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Microsoft.FSharp.Core.FSharpFunc{``0,``2},``1})">
+ <summary>Appends an optional field mapping to the codec.</summary>
+ <param name="codec">The codec to be used.</param>
+ <param name="fieldName">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <param name="rest">The other mappings.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jfieldWithLazy``5(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Fleece.Codec{``0,``0,``1,``2}},System.String,Microsoft.FSharp.Core.FSharpFunc{``3,``2},Fleece.Codec{Fleece.PropertyList{``0},Fleece.PropertyList{``0},Microsoft.FSharp.Core.FSharpFunc{``1,``4},``3})">
+ <summary>Appends a field mapping to the codec.</summary>
+ <param name="codec">The codec thunk to be used.</param>
+ <param name="fieldName">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <param name="rest">The other mappings.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jfieldWith``4(Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``1},System.String,Microsoft.FSharp.Core.FSharpFunc{``2,``1},Fleece.Codec{Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Microsoft.FSharp.Core.FSharpFunc{``0,``3},``2})">
+ <summary>Appends a field mapping to the codec.</summary>
+ <param name="codec">The codec to be used.</param>
+ <param name="fieldName">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <param name="rest">The other mappings.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jfieldOpt``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpCodec,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``1,``1}}}}},Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``1}},System.String,Microsoft.FSharp.Core.FSharpFunc{``0,``1},Fleece.Codec{Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Microsoft.FSharp.Core.FSharpFunc{``1,``2},``0})">
+ <summary>Appends an optional field mapping to the codec.</summary>
+ <param name="fieldName">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <param name="rest">The other mappings.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jfield``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetCodec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpCodec,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``1,``1}}}}},System.String,Microsoft.FSharp.Core.FSharpFunc{``0,``1},Fleece.Codec{Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},Microsoft.FSharp.Core.FSharpFunc{``1,``2},``0})">
+ <summary>Appends a field mapping to the codec.</summary>
+ <param name="fieldName">A string that will be used as key to the field.</param>
+ <param name="getter">The field getter function.</param>
+ <param name="rest">The other mappings.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.withFields``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{FSharpPlus.Control.Zero,``1}},``0)">
+ <summary>Initialize the field mappings.</summary>
+ <param name="f">An object constructor as a curried function.</param>
+ <returns>The resulting object codec.</returns>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.op_DotEqualsQmark``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},System.String,Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Creates a new Json key-value pair for a Json object if the value is present in the option
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.op_DotEquals``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,``0)">
+<summary>
+ Creates a new Json key-value pair for a Json object
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jpairOpt``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},System.String,Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Creates a new Json key-value pair for a Json object if the value option is present
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jpairOptWith``1(Microsoft.FSharp.Core.FSharpFunc{``0,Fleece.Newtonsoft.Encoding},System.String,Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Creates a new Json key-value pair for a Json object if the value option is present
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jpair``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetEnc,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpEncode,Fleece.Codec{``1,``1,``0,``0}}}}},System.String,``0)">
+<summary>
+ Creates a new Json key-value pair for a Json object
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jpairWith``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},System.String,``0)">
+<summary>
+ Creates a new Json key-value pair for a Json object
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.op_DotAtQmark``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Tries to get a value from a Json object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.op_DotAt``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Gets a value from a Json object
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jgetOpt``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Tries to get a value from a Json object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jget``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.GetDec,Microsoft.FSharp.Core.FSharpFunc{Fleece.Internals.OpDecode,Fleece.Codec{Fleece.Newtonsoft.Encoding,Fleece.Newtonsoft.Encoding,``0,``0}}}}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Gets a value from a Json object
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jgetOptWith``2(Microsoft.FSharp.Core.FSharpFunc{Fleece.Newtonsoft.Encoding,Microsoft.FSharp.Core.FSharpResult{``0,``1}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Tries to get a value from a Json object.
+ Returns None if key is not present in the object.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.jgetWith``1(Microsoft.FSharp.Core.FSharpFunc{Fleece.Newtonsoft.Encoding,Microsoft.FSharp.Core.FSharpResult{``0,Fleece.DecodeError}},Fleece.PropertyList{Fleece.Newtonsoft.Encoding},System.String)">
+<summary>
+ Gets a value from a Json object
+</summary>
+</member>
+<member name="P:Fleece.Newtonsoft.OperatorsModule.jsonValueToTextCodec">
+<summary>
+ A codec to encode a Json value to a Json text and the other way around.
+</summary>
+</member>
+<member name="P:Fleece.Newtonsoft.OperatorsModule.jsonObjToValueCodec">
+<summary>
+ A codec to encode a collection of property/values into a Json encoding and the other way around.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.Codec.map``4(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Fleece.Codec{Fleece.PropertyList{``2},Fleece.PropertyList{``2},``0,``3})">
+<summary>
+ Maps a function over the decoder.
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.Codec.compose``6(Fleece.Codec{``0,``1,``2,``3},Fleece.Codec{``2,``3,``4,``5})">
+<summary>
+ Creates a new codec which is the result of applying codec2 then codec1 for encoding
+ and codec1 then codec2 for decoding
+</summary>
+</member>
+<member name="M:Fleece.Newtonsoft.OperatorsModule.Codec.invmap``4(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``0},Fleece.Codec{``1,``1,``2,``3})">
+<summary>
+ Turns a Codec into another Codec, by mapping it over an isomorphism.
+</summary>
+</member>
+<member name="T:Fleece.Newtonsoft.OperatorsModule.Codec">
+<summary>
+ Functions operating on Codecs
+</summary>
+</member>
+</members>
+</doc>

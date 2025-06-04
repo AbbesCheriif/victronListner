@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\ADT\\victronListner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|C:\\ADT\\victronListner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|c:\\adt\\victronlistner\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|c:\\adt\\victronlistner\\generated_data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:generated_data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|c:\\adt\\victronlistner\\devicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:devicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|c:\\adt\\victronlistner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|c:\\adt\\victronlistner\\sshmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2D80615-5D62-411E-AF91-7B7BBFF22CE1}|victronListner.csproj|solutionrelative:sshmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SshManager.cs",
-              "DocumentMoniker": "C:\\ADT\\victronListner\\SshManager.cs",
-              "RelativeDocumentMoniker": "SshManager.cs",
-              "ToolTip": "C:\\ADT\\victronListner\\SshManager.cs",
-              "RelativeToolTip": "SshManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T14:15:38.228Z",
+              "DocumentIndex": 2,
+              "Title": "generated_data.json",
+              "DocumentMoniker": "C:\\ADT\\victronListner\\generated_data.json",
+              "RelativeDocumentMoniker": "generated_data.json",
+              "ToolTip": "C:\\ADT\\victronListner\\generated_data.json",
+              "RelativeToolTip": "generated_data.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T17:16:20.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "DeviceManager.cs",
+              "DocumentMoniker": "C:\\ADT\\victronListner\\DeviceManager.cs",
+              "RelativeDocumentMoniker": "DeviceManager.cs",
+              "ToolTip": "C:\\ADT\\victronListner\\DeviceManager.cs",
+              "RelativeToolTip": "DeviceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:50:09.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "C:\\ADT\\victronListner\\MenuManager.cs",
               "RelativeDocumentMoniker": "MenuManager.cs",
               "ToolTip": "C:\\ADT\\victronListner\\MenuManager.cs",
               "RelativeToolTip": "MenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAAwBcBAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T12:39:17.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeviceManager.cs",
-              "DocumentMoniker": "C:\\ADT\\victronListner\\DeviceManager.cs",
-              "RelativeDocumentMoniker": "DeviceManager.cs",
-              "ToolTip": "C:\\ADT\\victronListner\\DeviceManager.cs",
-              "RelativeToolTip": "DeviceManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAnwCYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:37:44.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ADT\\victronListner\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\ADT\\victronListner\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBsAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAswKoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T22:51:41.896Z",
               "EditorCaption": ""

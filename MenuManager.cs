@@ -17,6 +17,8 @@ namespace victronListner
         private readonly ModbusManager _modbusManager;
         private readonly DeviceManager _deviceManager;
 
+        public string json { get; private set; }
+
         public MenuManager(ExcelManager excelManager, ModbusManager modbusManager, DeviceManager deviceManager)
         {
             _excelManager = excelManager;
@@ -27,59 +29,15 @@ namespace victronListner
         /// <summary>
         /// Affiche et gère le menu principal
         /// </summary>
-        public async Task ShowMainMenu()
+        public async Task readAll()
         {
-            while (true)
+            try
+            {     
+                await StartAutoPolling();
+            }
+            catch (Exception ex)
             {
-                Console.WriteLine("\n=== MENU PRINCIPAL ===");
-                Console.WriteLine("1. Tester la connexion");
-                Console.WriteLine("2. Voir les services disponibles");
-                Console.WriteLine("3. Voir les appareils connectés");
-                Console.WriteLine("4. Lire un paramètre");
-                Console.WriteLine("5. Écrire un paramètre");
-                Console.WriteLine("6. Lire un registre directement");
-                Console.WriteLine("7. Démarrer la récupération automatique (chaque seconde)");
-                Console.WriteLine("0. Quitter");
-                Console.Write("Votre choix: ");
-
-                string choice = Console.ReadLine();
-
-                try
-                {
-                    switch (choice)
-                    {
-                        case "1":
-                            await TestConnection();
-                            break;
-                        case "2":
-                            ShowAvailableServices();
-                            break;
-                        case "3":
-                            ShowConnectedDevices();
-                            break;
-                        case "4":
-                            await ReadSetting();
-                            break;
-                        case "5":
-                            await WriteSetting();
-                            break;
-                        case "6":
-                            await ReadRegisterDirect();
-                            break;
-                        case "7":
-                            await StartAutoPolling();
-                            break;
-                        case "0":
-                            return;
-                        default:
-                            Console.WriteLine("Choix invalide.");
-                            break;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erreur: {ex.Message}");
-                }
+                Console.WriteLine($"Erreur: {ex.Message}");
             }
         }
 
@@ -285,13 +243,8 @@ namespace victronListner
         {
             Console.WriteLine("Démarrage de la récupération automatique...");
 
-            while (true)
-            {
                 try
                 {
-                    // 1. Déclarer et démarrer le Stopwatch
-                    Stopwatch stopwatch = new Stopwatch();
-                    stopwatch.Start(); // Démarre le chronomètre
                     var result = new Dictionary<string, Dictionary<string, object>>();
 
                     // Rafraîchir la liste des services
@@ -321,20 +274,10 @@ namespace victronListner
                     }
 
                     // Afficher le JSON dans la console
-                    /*string json = JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true });
-                    Console.WriteLine(json);
+                    json = JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true });
+                    /*Console.WriteLine(json);
 
                     Console.WriteLine($"Données mises à jour à {DateTime.Now}");*/
-
-
-                    // 2. Arrêter le Stopwatch
-                    stopwatch.Stop(); // Arrête le chronomètre
-
-                    // 3. Récupérer et afficher le temps écoulé
-                    // Temps total écoulé en millisecondes
-                    long milliseconds = stopwatch.ElapsedMilliseconds;
-                    Console.WriteLine($"\nTemps d'exécution du bloc de code : {milliseconds} ms");
-
                     //await Task.Delay(1000); // Attendre 1 seconde
                 }
                 catch (Exception ex)
@@ -342,7 +285,6 @@ namespace victronListner
                     Console.WriteLine($"Erreur dans la boucle : {ex.Message}");
                     await Task.Delay(1000); // attendre même en cas d'erreur
                 }
-            }
         }
 
 
